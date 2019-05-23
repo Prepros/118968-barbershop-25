@@ -12,47 +12,50 @@
   <link rel="icon" type="image/x-icon" href="#">
   <link rel="icon" type="image/png" href="#">
 
+  <!-- Шрифты -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+
   <!-- Стили -->
-  <link rel="stylesheet" href="#">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="inner-page">
   <!-- Шапка -->
   <header class="main-header">
     <div class="container">
-
-      <!-- Лого -->
-      <a class="logo" href="index.html">
-        <img class="logo-img" src="img/page-logo.svg" width="111" height="24" alt="Логотип сайта">
-      </a>
-
       <!-- Основная навигация -->
       <nav class="main-nav">
+        <!-- Лого -->
+        <a class="logo" href="index.html">
+          <img class="logo-img" src="img/page-logo.svg" width="111" height="24" alt="Логотип сайта">
+        </a>
+
         <!-- Ссылки на страницы -->
-        <ul class="main-nav-list">
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="#">Информация</a>
+        <ul class="site-nav">
+          <li>
+            <a href="#">Информация</a>
           </li>
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="#">Новости</a>
+          <li>
+            <a href="#">Новости</a>
           </li>
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="price.html">Прайс-лист</a>
+          <li>
+            <a href="price.html">Прайс-лист</a>
           </li>
-          <li class="main-nav-item active">
-            <a class="main-nav-link" href="catalog.html">Магазин</a>
+          <li class="active">
+            <a href="catalog.html">Магазин</a>
           </li>
-          <li class="main-nav-item">
-            <a class="main-nav-link" href="#">Контакты</a>
+          <li>
+            <a href="#">Контакты</a>
           </li>
         </ul><!-- Ссылки на страницы -->
 
         <!-- Ссылки на пользовательский профиль -->
-        <ul class="user-nav-list">
-          <li class="user-nav-item">
-            <a class="user-nav-link icon-sigin" href="#">Василий Шмелев</a>
+        <ul class="user-nav">
+          <li>
+            <a href="#">Василий Шмелев</a>
           </li>
-          <li class="user-nav-item">
-            <a class="user-nav-link icon-sigin" href="index.html">Выход</a>
+          <li>
+            <a class="icon-sigin" href="index.html">Выход</a>
           </li>
         </ul><!-- Ссылки на пользовательский профиль -->
       </nav><!-- Основная навигация -->
@@ -110,13 +113,13 @@
         <!-- Правый блок -->
         <div class="right-block">
           <header class="product-header">
-            <strong class="product-stock">Есть в наличии</strong>
+            <strong>Есть в наличии</strong>
             Артикул: dexter-ae
           </header>
 
           <p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-          <p class="product-price">
-            <b class="product-price">2 900 ₽</b>
+          <p class="product-row">
+            <b>2 900 ₽</b>
             <a class="button product-button" href="#">Купить</a>
           </p>
 

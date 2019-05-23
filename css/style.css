@@ -1,0 +1,399 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+
+  background-color: #000;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.inner-page {
+  color: #000;
+  background-color: #fcf9f6;
+  background-image: url("../img/wrapp-bg.jpg");
+  background-repeat: repeat;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+
+  background-color: #ccc;
+  border: 7px solid #fff;
+}
+
+ul {
+
+}
+
+h1,
+.main-title {
+  margin: 30px 0;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+
+h2 {
+  margin: 24px 0;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h3 {
+  margin: 20px 0;
+
+  font-size: 20px;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 2px solid #000;
+}
+
+input {
+  font: inherit;
+  text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="password"] {
+  background-color: #f9f6f3;
+  border: 2px solid #000;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #663d15;
+  outline: none;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  cursor: pointer;
+}
+
+/* Скрываем блоки*/
+.visually-hidden1:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Кнопки */
+.button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+
+  font: inherit;
+  vertical-align: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+
+  background-color: #000;
+  border: none;
+
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #663d15;
+  outline: none;
+}
+
+/* Обертка */
+.main-wrapp {
+  color: #000;
+
+  background-color: #f4f1ee;
+  background-image: url("../img/wrapp-bg.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+/* Шапка */
+.main-header {
+
+}
+
+/* Логотип*/
+.logo img {
+  background-color: transparent;
+  border: none;
+}
+
+/* Навигация */
+.main-nav {
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+
+  background-color: #000;
+}
+
+.site-nav,
+.user-nav {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-nav a,
+.user-nav a {
+  color: #fff;
+}
+
+.site-nav a:hover,
+.site-nav a:focus,
+.user-nav a:hover,
+.user-nav a:focus {
+  background-color: #242424;
+  outline: none;
+}
+
+/* Преимущества */
+.features {}
+
+.features-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features-list li {
+  text-align: center;
+}
+
+/* Новости */
+.news {}
+
+.news-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.news-list time {
+  text-transform: lowercase;
+}
+
+.news a {
+  color: #fff;
+}
+
+/* Фотогалерея */
+.gallery {}
+
+.gallery-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.gallery-list li {
+  display: none;
+}
+
+.gallery-list .active {
+  display: block;
+}
+
+.gallery-content {
+  margin: 0;
+}
+
+/* Контактная информация */
+.main-contact address {
+  font-style: normal;
+}
+
+/* Записаться */
+.appointment input {
+  text-transform: none;
+}
+
+/* Подвал */
+.main-footer {
+  color: #fff;
+
+  background-color: #212121;
+  background-image: url("../img/footer-bg.jpg");
+  background-repeat: repeat;
+}
+
+.main-footer address {
+  font-style: normal;
+}
+
+.main-footer a {
+  color: #fff;
+
+  text-decoration: underline;
+}
+
+.main-footer a:hover,
+.main-footer a:focus,
+.main-footer a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+/* Социальные иконки */
+.social-list {
+  margin: 0;
+  padding: 0;
+
+  color: #fff;
+
+  list-style: none;
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.breadcrumbs li {
+  color: #aba9a7;
+}
+
+.breadcrumbs a {
+  color: #000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Список товаров */
+.product-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.product-item {
+  color: #000;
+  background-color: #fff;
+}
+
+.product-item h3 {
+  margin: 14px 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+}
+
+.product-item span {
+  text-transform: none;
+}
+
+.product-row {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.product-row b {
+  color: #000;
+  background-color: #e5e5e5;
+}
+
+.product-header {
+  color: #aeaeae;
+}
+
+.product-header strong {
+  color: #000;
+}
+
+/* Пагинация */
+.pagination {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.pagination a {
+  color: #fff;
+  background-color: #000;
+}
+
+.pagination a:hover,
+.pagination a:focus {
+  background-color: #663d15;
+}
+
+.pagination .active a {
+  color: #000;
+  background-color: #fff;
+}
+
+/* Модальное окно*/
+.modal {
+  color: #000;
+
+  background-color: #f4f1ee;
+  background-image: url("../img/wrapp-bg.jpg");
+  background-repeat: repeat;
+}
+
+.modal-login-item a {
+  color: #000;
+
+  text-decoration: underline;
+}
