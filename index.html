@@ -29,7 +29,7 @@
               <li><a href="#">Информация</a></li>
               <li><a href="#">Новости</a></li>
               <li><a href="#">Прайс-лист</a></li>
-              <li class="active"><a href="#">Магазин</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
             <ul class="user-nav">
@@ -79,22 +79,25 @@
 
         <section class="gallery">
           <h2 class="page-title">Фотогалерея</h2>
-          <figure class="gallery-content">
+
             <ul class="gallery-list">
               <li class="gallery-item active">
-                <a class="gallery-link" href="#">
-                  <img src="img/gallery-1.jpg" width="286" height="164" alt="Наш холл">
-                  <figcaption>Так выглядит наш хол дорогой друг! Приходи к нам в гости и ты ощутишь всю мощь нашего интерьера.</figcaption>
-                </a>
+                <figure class="gallery-content">
+                  <a class="gallery-link" href="#">
+                    <img src="img/gallery-1.jpg" width="286" height="164" alt="Наш холл">
+                  </a>
+                  <figcaption class="gallery-desc">Так выглядит наш хол дорогой друг! Приходи к нам в гости и ты ощутишь всю мощь нашего интерьера.</figcaption>
+                </figure>
               </li>
               <li class="gallery-item">
-                <a class="gallery-link" href="#">
-                  <img src="img/gallery-1.jpg" width="286" height="164" alt="Наш холл 2">
-                  <figcaption>Так выглядит наш холл 2</figcaption>
-                </a>
+                <figure class="gallery-content">
+                  <a class="gallery-link" href="#">
+                    <img src="img/gallery-1.jpg" width="286" height="164" alt="Наш холл 2">
+                  </a>
+                  <figcaption class="gallery-desc">Так выглядит наш холл 2</figcaption>
+                </figure>
               </li>
             </ul>
-          </figure>
           <button class="button gallery-button gallery-button-back" type="button" disabled>Назад</button>
           <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
         </section>
@@ -123,11 +126,11 @@
           <form class="appointment-form" action="http://echo.htmlacademy.ru" method="post">
             <p class="appointment-item">
               <label for="date">Дата</label>
-              <input id="date" type="date" name="date" placeholder="29.05.2019" required>
+              <input id="date" type="text" name="date" placeholder="29.05.2019" required>
             </p>
             <p class="appointment-item">
               <label for="time">Время</label>
-              <input id="time" type="time" name="time" placeholder="10:00" required>
+              <input id="time" type="text" name="time" placeholder="10:00" required>
             </p>
             <p class="appointment-item">
               <label for="name">Ваше имя</label>
@@ -178,7 +181,7 @@
       </div>
       <p class="copyright">
         <b class="main-footer-title">Разработано:</b>
-        <a class="button" href="http://htmlacademy.ru">HTML Academy</a>
+        <a class="button" href="http://htmlacademy.ru" target="_blank">HTML Academy</a>
       </p>
     </div>
   </footer>
