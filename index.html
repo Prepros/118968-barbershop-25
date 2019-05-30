@@ -186,5 +186,37 @@
     </div>
   </footer>
 
+  <section class="modal modal-login">
+    <h2 class="page-title">Личный кабинет</h2>
+    <p>Введите пожалуйста свой логин и пароль</p>
+    <form class="modal-login-form" action="http://echo.htmlacademy.ru" method="post">
+      <p class="modal-login-item">
+        <label class="visually-hidden" for="login">Ваш логин</label>
+        <input class="icon-user" id="login" type="text" name="login" placeholder="Логин" required>
+      </p>
+      <p class="modal-login-item">
+        <label class="visually-hidden" for="password">Ваш пароль</label>
+        <input class="icon-pass" id="password" type="password" name="password" placeholder="Пароль" required>
+      </p>
+      <p class="modal-login-item remember">
+        <input class="visually-hidden checkbox-custom" id="remember" type="checkbox" name="remember" checked>
+        <label for="remember">Запомнить меня</label>
+        <a class="modal-login-link" href="#">Я забыл пароль!</a>
+      </p>
+      <button class="button" type="submit">Войти</button>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть модальное окно</span></button>
+    </form>
+  </section>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Карта проезда</h2>
+    <a class="modal-map-link">
+      <img src="img/map.jpg" width="766" height="560" alt="Улица такая то дом такой то">
+    </a>
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть модальное окно</span></button>
+  </section>
+
+  <div class="overflow overflow-hidden"></div>
+
 </body>
 </html>

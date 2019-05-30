@@ -15,6 +15,8 @@ html {
 }
 
 body {
+  position: relative;
+
   min-width: 960px;
   display: flex;
   flex-direction: column;
@@ -236,14 +238,6 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-.site-nav {
-  width: 620px;
-}
-
-.user-nav {
-  max-width: 140px;
-}
-
 .site-nav,
 .user-nav {
   display: flex;
@@ -252,6 +246,15 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   list-style: none;
+}
+
+.site-nav {
+  width: 620px;
+}
+
+.user-nav {
+  max-width: 140px;
+  margin-left: auto;
 }
 
 .site-nav .active a {
@@ -307,10 +310,13 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-sigin.svg");
   background-repeat: no-repeat;
 
+  opacity: .2;
   content: "";
 }
 
-
+.user-nav .icon-signin:hover::before {
+  opacity: 1;
+}
 
 
 
@@ -599,6 +605,10 @@ input[type="radio"].visually-hidden {
   background-color: #1f1f1f;
   background-image: url("../img/footer-bg.jpg");
   background-repeat: repeat;
+}
+
+.inner-page .main-footer {
+  box-shadow: inset 0 30px 20px 0px rgba(21, 21, 21, 0.57);
 }
 
 .main-footer .container {
@@ -946,7 +956,7 @@ input[type="radio"].visually-hidden {
 .catalog-price {
   box-sizing: border-box;
   display: flex;
-
+  margin: 0;
   padding: 16px;
   padding-top: 0;
 }
@@ -995,11 +1005,8 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 43px;
-  height: 43px;
+  display: block;
+  padding: 10px 20px;
 
   color: #fff;
 
@@ -1025,3 +1032,387 @@ input[type="radio"].visually-hidden {
 .pagination-active a:focus {
   background-color: #fff;
 }
+
+
+
+
+
+
+
+
+
+
+/** Продукт **/
+.product-photo {
+  width: 460px;
+}
+
+.product-photo-big {
+  display: block;
+  width: 460px;
+  height: 498px;
+  margin-bottom: 20px;
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+}
+
+.product-photo-big:hover,
+.product-photo-big:focus {
+  box-shadow: 0 0 25px rgba(0, 0, 0, .3);
+}
+
+.product-photo-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.product-photo-item {
+  margin-right: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+}
+
+.product-photo-item:hover,
+.product-photo-item:focus {
+  box-shadow: 0 0 25px rgba(0, 0, 0, .3);
+}
+
+.product-photo-small {
+  display: block;
+  width: 140px;
+  height: 149px;
+}
+
+.product-info {
+  width: 390px;
+}
+
+.product-description {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.product-availability {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.product-article {
+  width: 50%;
+
+  color: #aeaeae;
+  text-align: right;
+}
+
+.product-text {
+  margin-bottom: 35px;
+}
+
+.product-info .catalog-price {
+  margin-bottom: 60px;
+  padding: 0;
+}
+
+.product-info h3 {
+  margin: 0;
+  margin-bottom: 28px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.product-info ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.product-info li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.product-info li::after {
+  position: absolute;
+  top: 9px;
+  left: 2px;
+
+  width: 7px;
+  height: 7px;
+
+  background-color: #000;
+  transform:  rotate(45deg);
+
+  content: ""
+}
+
+
+
+
+
+
+
+/** Модальное окно **/
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+
+  box-sizing: border-box;
+  display: none;
+
+  color: #000;
+
+  box-shadow: 0 30px 50px 10px rgba(0, 0, 0, .75);
+}
+
+.modal-open {
+  display: block;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: -37px;
+
+  width: 23px;
+  height: 23px;
+  margin: 0;
+  padding: 0;
+
+  font: inherit;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 5px;
+  height: 23px;
+  margin-left: -2px;
+
+  background-color: #d0d0d0;
+
+  content: "";
+}
+
+.modal-close:hover::before,
+.modal-close:hover::after,
+.modal-close:focus::before,
+.modal-close:focus::after {
+  background-color: #663d15;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-login {
+  z-index: 2;
+
+  width: 460px;
+  height: 385px;
+  margin-left: -230px;
+  margin-top: -192.5px;
+  padding: 50px 80px;
+
+  background-color: #fbf8f5;
+  background-image: url("../img/wrapp-bg.jpg");
+  background-repeat: repeat;
+}
+
+.modal-login .page-title {
+  margin-bottom: 20px;
+}
+
+.modal-login p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.modal-login-form {
+
+}
+
+.modal-login-item {
+  margin-bottom: 9px;
+}
+
+.modal-login-item:nth-child(2) {
+  margin-bottom: 17px;
+}
+
+.modal-login-item input[type="text"],
+.modal-login-item input[type="password"] {
+  width: 100%;
+  padding-top: 7px;
+  padding-left: 15px;
+  padding-right: 13px;
+  padding-bottom: 8px;
+
+  font: inherit;
+  text-transform: uppercase;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000;
+}
+
+.modal-login-item input[type="text"]::placeholder,
+.modal-login-item input[type="password"]::placeholder {
+  color: #000;
+}
+
+.modal-login-item input[type="text"]:hover,
+.modal-login-item input[type="password"]:hover,
+.modal-login-item input[type="password"]:focus,
+.modal-login-item input[type="password"]:focus {
+  border-color: #663d15;
+  outline: none;
+}
+
+.modal-login-item .icon-user {
+  background-image: url("../img/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+
+.modal-login-item .icon-pass {
+  background-image: url("../img/icon-lock.svg");
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+
+.modal-login-item.remember {
+  display: flex;
+  margin-bottom: 17px;
+}
+
+.modal-login-link {
+  margin-left: auto;
+
+  color: #000;
+  text-decoration: underline;
+}
+
+.modal-login-link:hover {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+.modal-map {
+  z-index: 1;
+
+  box-sizing: border-box;
+  width: 780px;
+  height: 574px;
+  margin-left: -390px;
+  margin-top: -287px;
+
+  border: 7px solid #fff;
+}
+
+.modal-map-link {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.checkbox-custom + label {
+  position: relative;
+  padding-left: 32px;
+
+  cursor: pointer;
+}
+
+.checkbox-custom:hover + label,
+.checkbox-custom:focus + label {
+  color: #663d15;
+  outline: none;
+}
+
+.checkbox-custom + label::before {
+  position: absolute;
+  top: 4px;
+  left: 0;
+
+  width: 16px;
+  height: 16px;
+
+  background-color: transparent;
+  border: 2px solid #000;
+
+  content: "";
+}
+
+.checkbox-custom:hover + label::before,
+.checkbox-custom:focus + label::before {
+  border-color: #663d15;
+}
+
+.checkbox-custom:checked + label::after {
+  position: absolute;
+  left: 2px;
+  top: 6px;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+
+  content: "";
+}
+
+.checkbox-custom:hover + label::after,
+.checkbox-custom:focus + label::after {
+  background-image: url("../img/icon-cross-hover.svg");
+}
+
+
+.overflow {
+  z-index: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.overflow-hidden {
+  display: none;
+}
+
