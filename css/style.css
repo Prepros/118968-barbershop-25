@@ -17,9 +17,9 @@ html {
 body {
   position: relative;
 
-  min-width: 960px;
   display: flex;
   flex-direction: column;
+  min-width: 960px;
 
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 14px;
@@ -1400,7 +1400,6 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-cross-hover.svg");
 }
 
-
 .overflow {
   z-index: 0;
   position: fixed;
@@ -1416,3 +1415,141 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
+.page-content h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.page-content h3 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.page-content h2 + h3 {
+  margin-top: 30px;
+}
+
+.page-content .content-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 65px;
+
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+}
+
+.content-title::before,
+.content-title::after {
+  flex-grow: 1;
+  flex-shrink: 0;
+
+  width: 50px;
+  height: 2px;
+
+  background-color: #000;
+
+  content: "";
+}
+
+.content-title::before {
+  margin-right: 25px;
+}
+
+.content-title::after {
+  margin-left: 25px;
+}
+
+.page-content p {
+  margin: 14px 0;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.page-content table {
+  background-color: #f9f6f3;
+  border-collapse: collapse;
+}
+
+.page-content td {
+  padding: 7px 17px;
+  border: 2px solid #000;
+}
+
+.custom-table-1 {
+  width: 100%;
+}
+
+.custom-table-1 td:last-child {
+  text-align: center;
+}
+
+.custom-list-1 {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.custom-list-1 li {
+  position: relative;
+
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.custom-list-1 li::before {
+  position: absolute;
+  top: 7px;
+  left: 0;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000;
+
+  transform: rotate(45deg);
+  content: "";
+}
+
+.page-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-column h2 {
+  width: 100%;
+  margin-right: 460px;
+}
+
+.page-column-left,
+.page-column-right {
+  width: 460px;
+}
+
+.page-column-left *:first-child,
+.page-column-right *:first-child {
+  margin-top: 0;
+}
+
+.page-column-left *:last-child,
+.page-column-right *:last-child {
+  margin-bottom: 0;
+}
+
+.page-column .short-text {
+  padding-right: 80px;
+}
