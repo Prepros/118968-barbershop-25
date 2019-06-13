@@ -116,7 +116,7 @@
           Пн—пт: с 10:00 до 22:00<br>
           Сб—вс: с 10:00 до 19:00
           </p>
-          <a class="button" href="#">Как проехать</a>
+          <a class="button map-button" href="#">Как проехать</a>
           <a class="button" href="#">Обратная связь</a>
         </section>
 
@@ -192,11 +192,11 @@
     <form class="modal-login-form" action="http://echo.htmlacademy.ru" method="post">
       <p class="modal-login-item">
         <label class="visually-hidden" for="login">Ваш логин</label>
-        <input class="icon-user" id="login" type="text" name="login" placeholder="Логин" required>
+        <input class="icon-user" id="login" type="text" name="login" placeholder="Логин">
       </p>
       <p class="modal-login-item">
         <label class="visually-hidden" for="password">Ваш пароль</label>
-        <input class="icon-pass" id="password" type="password" name="password" placeholder="Пароль" required>
+        <input class="icon-pass" id="password" type="password" name="password" placeholder="Пароль">
       </p>
       <p class="modal-login-item remember">
         <input class="visually-hidden checkbox-custom" id="remember" type="checkbox" name="remember" checked>
@@ -216,7 +216,8 @@
     <button class="modal-close" type="button"><span class="visually-hidden">Закрыть модальное окно</span></button>
   </section>
 
-  <div class="overflow overflow-hidden"></div>
+  <div class="overlay"></div>
 
+<script src="js/script.js"></script>
 </body>
 </html>
